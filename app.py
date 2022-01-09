@@ -1,7 +1,8 @@
-import pickle
 import streamlit as st
 import pandas as pd
 import numpy as np
+import sklearn
+import pickle
 
 # Sayfa Bilgileri
 st.set_page_config(page_title="Kredi Uygunluğu", page_icon=":bank:", layout="wide")
