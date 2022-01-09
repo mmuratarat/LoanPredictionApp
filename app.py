@@ -98,3 +98,13 @@ if st.button('Kredi verilsin mi?'):
     else:
         st.success('Krediniz {}'.format(result_))
         st.write(f'İstenilen kredi miktarı {LoanAmount_input * 1000: ,.2f} Türk lirasıdır.')
+
+# ---- STREAMLIT STİLİNİ SAKLA ----
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
